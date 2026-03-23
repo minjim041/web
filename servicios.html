@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios - Luna de Sal Tours</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="estilos/estq.css" rel="stylesheet">
+
+<style>
+
+/* SECCIÓN SERVICIOS */
+.servicios{
+padding:80px 20px;
+text-align:center;
+}
+
+.servicios h2{
+font-size:2.5rem;
+margin-bottom:40px;
+}
+
+/* TARJETAS DE SERVICIO */
+.servicio-card{
+background: #398b99;
+border-radius:15px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+height:100%;
+}
+
+.servicio-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.servicio-card h4{
+margin-bottom:15px;
+background-color: #398b99;
+}
+
+/* SECCIÓN EXPERIENCIA */
+.experiencia{
+padding:100px 20px;
+background:#000;
+color:white;
+text-align:center;
+}
+
+.experiencia h2{
+margin-bottom:30px;
+}
+
+/* BLOQUES DESTACADOS */
+.destacados{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.item{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:10px;
+width:250px;
+}
+
+/* CTA FINAL */
+.cta{
+padding:80px 20px;
+text-align:center;
+background:#398b99;
+color:rgb(255, 255, 255);
+}
+
+.cta button{
+background:white;
+color:#398b99;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.cta button:hover{
+background:#f1f1f1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR (NO SE MODIFICA) -->
+<nav class="navbar navbar-expand-lg navbar-brand fixed-top ">
+  <div class="container">
+    <a class="navbar-brand" href="#">LUNA DE SAL</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quien.html">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PORTADA (NO SE MODIFICA) -->
+<section class="principal">
+  <video class="video-fondo" autoplay muted loop>
+    <source src="vidc.mp4" type="video/mp4">
+  </video>
+
+
+  
+  <div class="contenido">
+    <h1>Nuestros Servicios</h1>
+    <p>
+      Diseñamos experiencias únicas para que vivas Bolivia como nunca antes. 
+      Cada viaje es una aventura pensada especialmente para ti.
+    </p>
+  </div>
+</section>
+<br>
+
+
+<!-- ========================= -->
+<!-- SECCIÓN SERVICIOS -->
+<!-- ========================= -->
+
+<section class="servicios">
+<h2>¿Qué ofrecemos?</h2>
+<!-- CARRUSEL -->
+<div class="container mt-4">
+<div class="row">
+<div class="col">
+
+<div id="carouselExampleIndicators" class="carousel slide">
+
+<!-- INDICADORES -->
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+</div>
+
+<!-- IMAGENES -->
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="img/ca4.webp" class="d-block w-100" style="height:400px; object-fit:cover;">
+</div>
+
+<div class="carousel-item">
+<img src="img/lapaz.jpg" class="d-block w-100" style="height:400px; object-fit:cover;">
+</div>
+
+<div class="carousel-item">
+<img src="img/madidi.jpg" class="d-block w-100" style="height:400px; object-fit:cover;">
+</div>
+
+</div>
+
+<!-- BOTONES -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<br><br><br>
+
+<div class="container">
+<div class="row">
+
+<!-- SERVICIO 1 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>🌄 Tours Personalizados</h4>
+<p>
+Creamos experiencias a medida según tus gustos, tiempo y presupuesto. 
+Cada viaje es único y adaptado completamente a ti.
+</p>
+</div>
+</div>
+
+<!-- SERVICIO 2 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>🚙 Transporte Seguro</h4>
+<p>
+Contamos con vehículos cómodos y conductores experimentados para garantizar 
+un viaje seguro y sin preocupaciones.
+</p>
+</div>
+</div>
+
+<!-- SERVICIO 3 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>🏨 Hospedaje Incluido</h4>
+<p>
+Seleccionamos alojamientos de calidad para que descanses y disfrutes 
+cada momento de tu aventura.
+</p>
+</div>
+</div>
+
+<!-- SERVICIO 4 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>📸 Experiencias Fotográficas</h4>
+<p>
+Te llevamos a los mejores puntos para capturar imágenes increíbles 
+del Salar y otros destinos.
+</p>
+</div>
+</div>
+
+<!-- SERVICIO 5 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>🌎 Guías Profesionales</h4>
+<p>
+Guías expertos que te acompañarán en todo momento, explicando cultura, 
+historia y secretos de cada lugar.
+</p>
+</div>
+</div>
+
+<!-- SERVICIO 6 -->
+<div class="col-md-4 mb-4">
+<div class="servicio-card">
+<h4>⭐ Atención Personalizada</h4>
+<p>
+Estamos contigo antes, durante y después del viaje para asegurarnos 
+de que tu experiencia sea perfecta.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- =========GALERI================ -->
+ <div class="container section text-center" id="destinos">
+
+<p>Descubre Bolivia de una forma única con nosotros. Cada viaje es una experiencia inolvidable,
+     llena de aventura, cultura y paisajes 
+    increíbles. Déjanos encargarnos de todo mientras tú solo disfrutas.
+     ¡Tu próxima aventura comienza aquí!</p>
+<h2>¡Todos nuestros destinos!</h2>
+
+<div class="row mt-5">
+
+<!-- 1 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/images.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Salar de Uyuni</h5>
+<p>El desierto de sal más grande del mundo.</p>
+<ul>
+<li>📍 Potosí</li>
+<li>⏱️ 1-3 días</li>
+<li>💰 $150 - $300</li>
+<li>🚙 4x4 incluido</li>
+<li>🏨 Hospedaje</li>
+<li>🍽️ Comidas</li>
+<li>📸 Fotografía</li>
+<li>📅 Abril - Noviembre</li>
+<li>⭐ Fácil</li>
+</ul>
+<p><strong>Incluye:</strong> guía, transporte, hotel.</p>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/lapaz.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>La Paz</h5>
+<p>Ciudad entre montañas.</p>
+<ul>
+<li>📍 La Paz</li>
+<li>⏱️ 1-2 días</li>
+<li>💰 $50 - $120</li>
+<li>🚡 Teleférico</li>
+<li>📸 Miradores</li>
+<li>📅 Todo el año</li>
+<li>⭐ Fácil</li>
+</ul>
+<p><strong>Incluye:</strong> guía, transporte urbano.</p>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/madidi.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Madidi</h5>
+<p>Selva amazónica increíble.</p>
+<ul>
+<li>📍 Amazonas</li>
+<li>⏱️ 3-5 días</li>
+<li>💰 $250 - $500</li>
+<li>🌿 Selva</li>
+<li>🦜 Fauna</li>
+<li>🚤 Transporte</li>
+<li>⭐ Medio</li>
+</ul>
+<p><strong>Incluye:</strong> guía, eco-lodge, comidas.</p>
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/lagoti.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Lago Titicaca</h5>
+<p>Lago navegable más alto.</p>
+<ul>
+<li>📍 Copacabana</li>
+<li>⏱️ 1-2 días</li>
+<li>💰 $80 - $150</li>
+<li>🚤 Isla del Sol</li>
+<li>🌅 Paisajes</li>
+<li>⭐ Fácil</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/sucre.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Sucre</h5>
+<p>Ciudad blanca colonial.</p>
+<ul>
+<li>📍 Sucre</li>
+<li>⏱️ 1-2 días</li>
+<li>💰 $60 - $130</li>
+<li>🏛️ Historia</li>
+<li>📸 Arquitectura</li>
+<li>⭐ Fácil</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/potosi.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Potosí</h5>
+<p>Historia minera.</p>
+<ul>
+<li>📍 Potosí</li>
+<li>⏱️ 1 día</li>
+<li>💰 $70 - $140</li>
+<li>⛏️ Minas</li>
+<li>🏔️ Cerro Rico</li>
+<li>⭐ Medio</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/santacruz.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Santa Cruz</h5>
+<p>Ciudad moderna.</p>
+<ul>
+<li>📍 Santa Cruz</li>
+<li>⏱️ 2 días</li>
+<li>💰 $100 - $200</li>
+<li>🌆 Vida nocturna</li>
+<li>🌴 Clima cálido</li>
+<li>⭐ Fácil</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/samaipata.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Samaipata</h5>
+<p>Destino arqueológico.</p>
+<ul>
+<li>📍 Santa Cruz</li>
+<li>⏱️ 1-2 días</li>
+<li>💰 $90 - $160</li>
+<li>🗿 El Fuerte</li>
+<li>🌿 Naturaleza</li>
+<li>⭐ Fácil</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/lagunasaltiplanicas.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Lagunas Altiplánicas</h5>
+<p>Paisajes surrealistas.</p>
+<ul>
+<li>📍 Sur de Bolivia</li>
+<li>⏱️ 2-3 días</li>
+<li>💰 $200 - $350</li>
+<li>🦩 Flamencos</li>
+<li>🌈 Colores</li>
+<li>⭐ Medio</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/tupiza.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Tupiza</h5>
+<p>El viejo oeste boliviano.</p>
+<ul>
+<li>📍 Tupiza</li>
+<li>⏱️ 2 días</li>
+<li>💰 $120 - $250</li>
+<li>🏜️ Cañones</li>
+<li>🐎 Cabalgatas</li>
+<li>⭐ Medio</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/tarija.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Tarija</h5>
+<p>Ruta del vino.</p>
+<ul>
+<li>📍 Tarija</li>
+<li>⏱️ 2 días</li>
+<li>💰 $130 - $250</li>
+<li>🍷 Viñedos</li>
+<li>🌄 Clima</li>
+<li>⭐ Fácil</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<img src="img/torotoro.jpg" class="card-img-top">
+<div class="card-body text-start">
+<h5>Torotoro</h5>
+<p>Aventura extrema.</p>
+<ul>
+<li>📍 Potosí</li>
+<li>⏱️ 2-3 días</li>
+<li>💰 $150 - $280</li>
+<li>🦖 Dinosaurios</li>
+<li>🕳️ Cavernas</li>
+<li>⭐ Medio</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- ===========tours cortos ============== -->
+ <div class="container section text-center" id="tours-cortos">
+
+<h2>Tours Cortos</h2>
+<p>Experiencias rápidas pero inolvidables para viajeros con poco tiempo.</p>
+
+<div class="row mt-5">
+
+<!-- 1 -->
+<div class="col-md-3 mb-4">
+<div class="card h-100">
+<img src="img/lapaz.jpg" class="card-img-top">
+<div class="card-body text-start">
+
+<h5>City Tour La Paz</h5>
+<p>Descubre lo mejor de la ciudad en pocas horas.</p>
+
+<ul>
+<li>⏱️ Duración: 4 - 6 horas</li>
+<li>💰 Precio: $25 - $50</li>
+<li>🚡 Teleférico incluido</li>
+<li>📸 Miradores</li>
+<li>🏛️ Centro histórico</li>
+<li>⭐ Nivel: Fácil</li>
+</ul>
+
+<p><strong>Incluye:</strong> guía + transporte</p>
+
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3 mb-4">
+<div class="card h-100">
+<img src="img/copacabana.jpg" class="card-img-top">
+<div class="card-body text-start">
+
+<h5>Copacabana Express</h5>
+<p>Escapada rápida al Lago Titicaca.</p>
+
+<ul>
+<li>⏱️ Duración: 1 día</li>
+<li>💰 Precio: $40 - $80</li>
+<li>🚤 Paseo en lancha</li>
+<li>🌅 Vista panorámica</li>
+<li>🙏 Cultura local</li>
+<li>⭐ Nivel: Fácil</li>
+</ul>
+
+<p><strong>Incluye:</strong> transporte + guía</p>
+
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3 mb-4">
+<div class="card h-100">
+<img src="img/samaipata.jpg" class="card-img-top">
+<div class="card-body text-start">
+
+<h5>Samaipata Rápido</h5>
+<p>Naturaleza y arqueología en un día.</p>
+
+<ul>
+<li>⏱️ Duración: 1 día</li>
+<li>💰 Precio: $50 - $90</li>
+<li>🗿 El Fuerte</li>
+<li>🌿 Naturaleza</li>
+<li>📸 Paisajes</li>
+<li>⭐ Nivel: Fácil</li>
+</ul>
+
+<p><strong>Incluye:</strong> guía + transporte</p>
+
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3 mb-4">
+<div class="card h-100">
+<img src="img/valledelaluna.jpg" class="card-img-top">
+<div class="card-body text-start">
+
+<h5>Valle de la Luna</h5>
+<p>Paisaje surrealista a minutos de La Paz.</p>
+
+<ul>
+<li>⏱️ Duración: 2 - 3 horas</li>
+<li>💰 Precio: $15 - $30</li>
+<li>🌄 Formaciones rocosas</li>
+<li>📸 Fotografía</li>
+<li>🚗 Acceso rápido</li>
+<li>⭐ Nivel: Fácil</li>
+</ul>
+
+<p><strong>Incluye:</strong> transporte + guía</p>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- PRECIOS Y RESERVAS -->
+
+
+<section class="precios text-center">
+
+<h2>Nuestros Paquetes</h2>
+<p>Elige la experiencia que mejor se adapte a tu aventura</p>
+
+<div class="container mt-5">
+<div class="row">
+
+<!-- PLAN 1 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100 shadow">
+<div class="card-body">
+<h4>🌄 Básico</h4>
+<h2>$50</h2>
+<p>Ideal para viajeros rápidos</p>
+
+<ul class="text-start">
+<li>✔ Tour 1 día</li>
+<li>✔ Transporte incluido</li>
+<li>✔ Guía básico</li>
+<li>❌ Hospedaje</li>
+</ul>
+
+<button class="btn btn-custom w-100" onclick="reservar('Básico')">Reservar</button>
+</div>
+</div>
+</div>
+
+<!-- PLAN 2 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100 shadow border-primary">
+<div class="card-body">
+<h4>🔥 Popular</h4>
+<h2>$250</h2>
+<p>La experiencia completa</p>
+
+<ul class="text-start">
+<li>✔ Tour 3 días</li>
+<li>✔ Transporte 4x4</li>
+<li>✔ Guía profesional</li>
+<li>✔ Hospedaje incluido</li>
+<li>✔ Alimentación</li>
+</ul>
+
+<button class="btn btn-custom w-100" onclick="reservar('Popular')">Reservar</button>
+</div>
+</div>
+</div>
+
+<!-- PLAN 3 -->
+<div class="col-md-4 mb-4">
+<div class="card h-100 shadow">
+<div class="card-body">
+<h4>💎 Premium</h4>
+<h2>$500</h2>
+<p>Experiencia exclusiva</p>
+
+<ul class="text-start">
+<li>✔ Tour privado</li>
+<li>✔ Hotel de lujo</li>
+<li>✔ Guía personalizado</li>
+<li>✔ Transporte VIP</li>
+<li>✔ Atención 24/7</li>
+</ul>
+
+<button class="btn btn-custom w-100" onclick="reservar('Premium')">Reservar</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- LLAMADO A LA ACCIÓN -->
+<!-- ========================= -->
+
+<section class="cta">
+<h2>¿Listo para tu próxima aventura?</h2>
+<p>Reserva hoy y vive una experiencia única en Bolivia</p>
+
+<button>Reservar ahora</button>
+</section>
+<BR></BR>
+<!-- FOOTER (NO SE MODIFICA) -->
+<footer>
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h5>Luna de Sal Tours</h5>
+<p>Viajes únicos en Bolivia.</p>
+</div>
+
+<div class="col-md-4">
+<h5>Enlaces</h5>
+<a href="index.html">Inicio</a>
+<a href="quien.html">¿Quiénes somos?</a>
+<a href="servicios.html">Servicios</a>
+<a href="blogs.html">Blog</a>
+<a href="contactos.html">Contactos</a>
+</div>
+
+<div class="col-md-4">
+<h5>Contacto</h5>
+<p>Email: info@lunadesal.com</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Luna de Sal Tours
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

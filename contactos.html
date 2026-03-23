@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto - Luna de Sal Tours</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="estilos/estq.css" rel="stylesheet">
+
+<style>
+
+/* SECCIÓN CONTACTO */
+.contacto{
+padding:80px 20px;
+background:rgb(255, 255, 255);
+text-align:center;
+}
+
+.contacto h2{
+margin-bottom:20px;
+}
+
+.contacto p{
+margin-bottom:40px;
+}
+
+/* INFO CONTACTO */
+.info-contacto{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+margin-bottom:50px;
+}
+
+.info-box{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(168, 91, 91, 0.1);
+width:280px;
+transition:0.3s;
+}
+
+.info-box:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO */
+.formulario{
+background:#398b99;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px white;
+max-width:800px;
+margin:auto;
+}
+
+/* MAPA */
+.mapa{
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR (NO TOCAR) -->
+<nav class="navbar navbar-expand-lg navbar-brand fixed-top ">
+  <div class="container">
+    <a class="navbar-brand" href="#">LUNA DE SAL</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quien.html">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- PORTADA (NO TOCAR) -->
+<section class="principal">
+  <video class="video-fondo" autoplay muted loop>
+    <source src="vidcra.mp4" type="video/mp4">
+  </video>
+
+  <div class="contenido">
+    <h1>Contáctanos</h1>
+    <p>
+      Estamos listos para ayudarte a planificar la aventura de tu vida. 
+      Escríbenos y comienza tu viaje hoy mismo.
+    </p>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- ========================= -->
+<!-- CONTACTO -->
+<!-- ========================= -->
+
+<section class="contacto">
+
+<h2>¿Cómo podemos ayudarte?</h2>
+<p>Elige la forma que prefieras para comunicarte con nosotros</p>
+
+<!-- INFO -->
+<div class="info-contacto">
+
+<div class="info-box">
+<h4>📍 Dirección</h4>
+<p>La Paz, Bolivia</p>
+</div>
+
+<div class="info-box">
+<h4>📞 Teléfono</h4>
+<p>+591 70000000</p>
+</div>
+
+<div class="info-box">
+<h4>📧 Email</h4>
+<p>info@lunadesal.com</p>
+</div>
+
+<div class="info-box">
+<h4>💬 WhatsApp</h4>
+<p>Respuesta rápida 24/7</p>
+</div>
+
+</div>
+
+<!-- FORMULARIO -->
+<div class="formulario">
+
+<h3>Envíanos un mensaje</h3>
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Nombre completo" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Correo electrónico" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Teléfono">
+</div>
+
+<div class="col-md-6 mb-3">
+<select class="form-control">
+<option>Tipo de consulta</option>
+<option>Reservas</option>
+<option>Información</option>
+<option>Soporte</option>
+</select>
+</div>
+
+<div class="col-12 mb-3">
+<textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-custom w-100">Enviar mensaje</button>
+
+</form>
+</div>
+
+<!-- MAPA -->
+<div class="mapa">
+<iframe 
+src="https://www.google.com/maps?q=La+Paz+Bolivia&output=embed" 
+width="100%" height="350" style="border:0; border-radius:15px;">
+</iframe>
+</div>
+
+</section>
+
+
+<!-- FOOTER (NO TOCAR) -->
+<footer>
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h5>Luna de Sal Tours</h5>
+<p>Viajes únicos en Bolivia.</p>
+</div>
+
+<div class="col-md-4">
+<h5>Enlaces</h5>
+<a href="index.html">Inicio</a>
+<a href="quien.html">¿Quiénes somos?</a>
+<a href="servicios.html">Servicios</a>
+<a href="blogs.html">Blog</a>
+<a href="contactos.html">Contactos</a>
+</div>
+
+<div class="col-md-4">
+<h5>Contacto</h5>
+<p>Email: info@lunadesal.com</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Luna de Sal Tours
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

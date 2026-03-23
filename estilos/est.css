@@ -1,0 +1,204 @@
+html{
+scroll-behavior: smooth;
+}
+
+body{
+
+margin:0;
+font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+margin-bottom:0;}
+/*background-color: #398b99;
+
+
+/* PORTADA */
+#principal{
+    min-height: 100vh;
+    position: relative;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+   
+}
+.principal{
+
+background-size: cover;
+background-position: center;
+height: 500px;
+color: #ffffff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+position: relative;
+z-index: 2;
+}
+
+
+.principal h1{
+font-size: 55px;
+font-weight: bold;
+}
+
+.principal p{
+font-size: 20px;
+max-width: 700px;
+}
+
+.principal h1, .principal p{
+text-shadow: 2px 2px 5px black;
+}
+
+/* BOTON */
+
+.btn-custom{
+background:#398b99;
+color:white;
+border-radius:30px;
+padding:10px 25px;
+transition:0.3s;
+border:none;
+}
+
+.btn-custom:hover{
+background: #6d6a6a;
+}
+
+/* OLA */
+.ola{
+position: absolute;
+bottom: 0;
+width: 100%;
+line-height: 0;
+}
+
+.ola svg{
+width: 100%;
+height: 140px;
+display:block;
+}
+
+.ola path{
+fill:#000000;
+}
+
+
+/* SECCIONES */
+.section{
+padding:60px 20px;
+}
+
+/* TARJETAS */
+.card{
+border:none;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BLOQUE IMPACTO */
+.bloque{
+background:#398b99;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#398b99;
+color:rgb(248, 235, 235);
+padding:40px 20px;
+}
+
+footer a{
+color:#ccc;
+text-decoration:none;
+display:block;
+}
+
+footer a:hover{
+color:white;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+color:#aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.experiencia{
+padding:60px 20px;
+background:#ffffff;
+}
+
+.experiencia .box{
+background:#f4f9fb;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.experiencia .box:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.contador{
+background:#00AEEF;
+color:white;
+padding:50px 20px;
+}
+
+.contador h2{
+font-size:40px;
+font-weight:bold;
+}
+
+.testimonios{
+padding:60px 20px;
+background:#f4f9fb;
+}
+
+.test-box{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cta{
+background:linear-gradient(145deg, #00AEEF, #0077B6);
+color:white;
+padding:60px 20px;
+}
+
+.cta h2{
+font-size:35px;
+font-weight:bold;
+}
+
+.cta .btn-custom{
+margin-top:15px;
+}
